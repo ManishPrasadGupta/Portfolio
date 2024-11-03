@@ -9,7 +9,7 @@ import Home from './components/Home/Home.jsx'
 import About from './components/About/About.jsx'
 import Contact from './components/Contact/Contact.jsx'
 import User from './components/User/User.jsx'
-import Projects from './components/Projects/projects.jsx'
+import Projects from './components/Projects/Projects.jsx'
 
 
 
