@@ -7,10 +7,9 @@ function Projects() {
       <h2 className="text-2xl font-bold mb-4">My Skills</h2>
       <div className="flex space-x-4">
         <PigGame />
-
       </div>
       <div className="flex space-x-4">
-        <h1>Coming Soon...</h1>
+        <h1>More projects coming soon...</h1>
       </div>
     </div>
   )
