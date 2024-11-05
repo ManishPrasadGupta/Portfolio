@@ -7,10 +7,10 @@ function Projects() {
       <h2 className="text-2xl font-bold mb-4">My Skills</h2>
       <div className="flex space-x-4">
         <PigGame />
-        <PigGame />
+
       </div>
       <div className="flex space-x-4">
-        
+        <h1>Coming Soon...</h1>
       </div>
     </div>
   )

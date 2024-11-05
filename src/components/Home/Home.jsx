@@ -12,13 +12,10 @@ export default function Home() {
         link.click(); // Trigger the download
     };
     return (
-        
-        <div className="mx-auto w-full max-w-7xl relative " style={{
-            backgroundImage: `linear-gradient(to right, rgba(34, 34, 30, 0.9), rgba(0, 0, 0, 0.9)),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVVl4VD7MVRf5YHAqrZsDm15H57l3XA8A617raWWXWmU6WsIYBGZqjI20XZelgk7rdfbs&usqp=CAU')`,
-            backgroundSize: "cover", 
-            backgroundRepeat: "no-repeat", // Prevents the image from repeating
-            backgroundPosition: "center", // Centers the image
-            }}>
+        <div 
+            className="mx-auto w-full max-w-7xl relative " 
+           
+            >
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
                     
@@ -31,13 +28,13 @@ export default function Home() {
                             <span 
                             className="hidden text-gray-600 sm:block text-2xl"
                              
-                            >Hi, I'm Manish Prasad Gupta From Meghalaya, India</span>
+                            >Hi, I'm Manish Prasad Gypta From Meghalaya, India</span>
                         </h1>
 
                         <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium bg-orange-700 rounded-lg hover:opacity-75"
+                            className="inline-flex text-white items-center px-6 py-3 font-medium backdrop-blur-10 bg-[#f65733] rounded-lg hover:bg-orange-400"
                             to="" onClick={handleDownload}>
-                            {/* <span className=''></span> */}
+                            
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
                             
                             &nbsp; My Resume
