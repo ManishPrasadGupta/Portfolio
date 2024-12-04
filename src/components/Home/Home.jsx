@@ -28,7 +28,7 @@ export default function Home() {
                             <span 
                             className="hidden text-gray-600 sm:block text-2xl"
                              
-                            >Hi, I'm Manish Prasad Gypta From Meghalaya, India</span>
+                            >Hi, I'm Manish Prasad Gupta From Meghalaya, India</span>
                         </h1>
 
                         <Link
