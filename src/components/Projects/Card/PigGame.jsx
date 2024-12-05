@@ -6,7 +6,7 @@ function PigGame() {
           <div className="flex space-x-4">
           <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="/">
-                <img className="p-8 rounded-t-lg" src="https://user-images.githubusercontent.com/63254870/101832427-6593ea80-3b05-11eb-83ab-0b903ef23ebc.png" alt="product_image1" />
+                <img className="p-8 rounded-t-lg" src="https://res.cloudinary.com/mnisprsd/image/upload/v1733384676/Screenshot_20241205_121146_gvt330.png" alt="product_image1" />
             </a>
             <div className="px-5 pb-5">
                 <a href="/">
