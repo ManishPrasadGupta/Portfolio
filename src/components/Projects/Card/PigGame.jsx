@@ -11,13 +11,13 @@ function PigGame() {
             <div className="px-5 pb-5">
                 <a href="/">
                     <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white">
-                        About My Project...
+                    A fun and interactive dice-based game built with HTML, CSS, and JavaScript. The Pig Game is a two-player game where players take turns rolling a dice, accumulating points, and strategizing to win by reaching the target score first.
                     </h5>
                 </a>
                 <div className="flex items-center justify-between">
                     
                     <a
-                        href="/"
+                        href="https://pig-game-sigma-three.vercel.app/"
                         className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
                     >
                         View
