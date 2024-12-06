@@ -62,7 +62,7 @@ export default function Home() {
                 rounded-lg shadow-md hover:bg-red-500 transition duration-50 ease-in-out
                 "> {/* Second inner container */}
                     <h2 className="text-lg font-bold">Cybersecurity</h2>
-                    <p>"I have over 10 months of hands-on experience exploring various tools and techniques, along with a solid foundation in networking and operating systems, and I’m continuously expanding my skills in this field"</p>
+                    <p>"I have over 10 months of hands-on experience exploring various tools and techniques, along with a solid foundation in networking and operating systems, and I’m continuously expanding my skills in this field."</p>
                 </div>
                 
             </div>
