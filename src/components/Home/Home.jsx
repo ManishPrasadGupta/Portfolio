@@ -7,7 +7,7 @@ export default function Home() {
 
         // Create a temporary anchor tag to trigger the download
         const link = document.createElement('a');
-        // link.href = '../../Resume.pdf'; // Path to your file in the public folder
+        link.href = 'https://drive.google.com/file/d/1xY_ia_mQ6jeRJl9Lkl4bFesX4tjsm3rt/view?usp=drive_link'; // Path to your file in the public folder
         link.download = 'https://drive.google.com/file/d/1xY_ia_mQ6jeRJl9Lkl4bFesX4tjsm3rt/view?usp=drive_link'; // File name for download
         link.click(); // Trigger the download
     };
