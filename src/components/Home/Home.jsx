@@ -19,7 +19,7 @@ export default function Home() {
             <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
                 <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
                     
-                    <img className="w-96" src="https://res.cloudinary.com/mnisprsd/image/upload/v1730467291/me_qg6jnd.jpg" alt="image1" />
+                    <img className="w-96" src="https://res.cloudinary.com/mnisprsd/image/upload/v1735478072/me1_ldwgqu.jpg" alt="image1" />
                 </div>
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
@@ -56,7 +56,7 @@ export default function Home() {
                  rounded-lg shadow-md transition hover:bg-red-500 duration-50 ease-in-out ">
                 {/* First inner container */}
                     <h2 className="text-lg font-bold">Web Development</h2>
-                    <p>"I have over a year of experience in web development, with a strong foundation in JavaScript and React, and have built various small projects that showcase my skills. Currently, I'm deepening my expertise by focusing on backend development to become a well-rounded full-stack developer."</p>
+                    <p>"I have over a year of experience in web development, with a strong foundation in TypeScript, JavaScript, ReactJS & NextJS and have built various small projects that showcase my skills. Currently, I'm deepening my expertise by focusing on backend development to become a well-rounded full-stack developer."</p>
                 </div>
                 <div className="flex-1 bg-slate-700 p-4 text-white
                 rounded-lg shadow-md hover:bg-red-500 transition duration-50 ease-in-out
