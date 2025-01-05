@@ -1,6 +1,31 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 
 export default function Contact() {
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbym219RngTW_ImRy5GhFOTbI5bstlsrqrw5k0ll3oZTISNjafSFyLoEIF0ehg2eY7eCCQ/exec'
+
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const form = e.target;
+
+        try {
+            const response = await fetch(scriptURL, { 
+                method: 'POST', 
+                body: new FormData(form) 
+            });
+            if (response.ok) {
+                alert('Form submitted successfully!');
+                form.reset();
+                window.location.reload();
+            } else {
+                alert('Failed to submit the form.');
+            }
+           
+        } catch (error) {
+            console.error('Error!', error.message);
+        }
+    };
+    
     return (
         <div className="relative flex items-top justify-center min-h-[700px] bg-indigo-300 sm:items-center sm:pt-0">
             <div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -63,14 +88,14 @@ export default function Contact() {
                             </div>
                         </div>
 
-                        <form className="p-6 flex flex-col justify-center">
+                        <form className="p-6 flex flex-col justify-center"  onSubmit={handleSubmit}>
                             <div className="flex flex-col">
                                 <label for="name" className="hidden">
                                     Full Name
                                 </label>
                                 <input
                                     type="name"
-                                    name="name"
+                                    name="Name"
                                     id="name"
                                     placeholder="Full Name"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
@@ -83,7 +108,7 @@ export default function Contact() {
                                 </label>
                                 <input
                                     type="email"
-                                    name="email"
+                                    name="Email"
                                     id="email"
                                     placeholder="Email"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
@@ -91,14 +116,14 @@ export default function Contact() {
                             </div>
 
                             <div className="flex flex-col mt-2">
-                                <label for="tel" className="hidden">
-                                    Number
+                                <label for="num" className="hidden">
+                                    Your Message:
                                 </label>
-                                <input
-                                    type="tel"
-                                    name="tel"
-                                    id="tel"
-                                    placeholder="Telephone Number"
+                                <textarea
+                                    type="text"
+                                    name="Message"
+                                    id="num"
+                                    placeholder="Your Message"
                                     className="w-100 mt-2 py-3 px-3 rounded-lg bg-white border border-gray-400 text-gray-800 font-semibold focus:border-orange-500 focus:outline-none"
                                 />
                             </div>
