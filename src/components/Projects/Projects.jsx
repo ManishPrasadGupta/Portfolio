@@ -9,13 +9,12 @@ function Projects() {
   return (
     <div className="flex flex-col items-center p-6 bg-indigo-300 rounded-lg shadow-md w-full">
       <h2 className="text-2xl font-bold mb-4">My Skills</h2>
-      <div className="flex space-x-4">
+      <div className="space-x-4 lg:flex">
         <AnanymousFeedback />
         <FrontendDesign />
-
       </div>
       <br/> 
-      <div className="flex space-x-4">
+      <div className="space-x-4 lg:flex">
         <PigGame />
         <SnakeGame />
         <TodoList />
