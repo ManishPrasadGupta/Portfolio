@@ -63,7 +63,7 @@ export default function Footer() {
                 <hr className="my-6 border-indigo-900 sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <span className="text-sm text-white sm:text-center">
-                        ©2026
+                        ©2024
                         <a href="#" className="hover:underline">
                             manishprasadgupta
                         </a>
