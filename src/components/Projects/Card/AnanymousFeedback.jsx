@@ -2,9 +2,14 @@ import React from 'react'
 
 function AnanymousFeedback() {
     return (
-        <div className="flex flex-col items-center p-6 bg-gray-400 rounded-lg shadow-md w-full">
+        <div 
+        className="flex flex-col items-center p-6 bg-gray-400 rounded-lg shadow-md w-full"
+        >
           <div className="flex space-x-4">
-          <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div 
+          className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
+          >
+            <h1 className="text-2xl font-bold text-white mt-5">Ananymous Feedback</h1>
             <a href="https://ananymous-text-u812.vercel.app/">
                 <img className="p-8 rounded-t-lg" src="https://res.cloudinary.com/mnisprsd/image/upload/v1736080149/Screenshot_2025-01-05_175829_v1hmyi.png" alt="product_image1" />
             </a>
@@ -15,7 +20,6 @@ function AnanymousFeedback() {
                     </h5>
                 </a>
                 <div className="flex items-center justify-between">
-                    
                     <a
                         href="https://ananymous-text-u812.vercel.app/"
                         target="_blank"
