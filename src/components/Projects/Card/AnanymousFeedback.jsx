@@ -9,7 +9,7 @@ function AnanymousFeedback() {
           <div 
           className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
           >
-            <h1 className="text-2xl font-bold text-white mt-5">Ananymous Feedback</h1>
+            <h1 className="flex justify-center text-2xl font-bold text-white mt-5">Ananymous Feedback</h1>
             <a href="https://ananymous-text-u812.vercel.app/">
                 <img className="p-8 rounded-t-lg" src="https://res.cloudinary.com/mnisprsd/image/upload/v1736080149/Screenshot_2025-01-05_175829_v1hmyi.png" alt="product_image1" />
             </a>

@@ -5,7 +5,7 @@ function TodoList() {
         <div className="flex flex-col items-center p-6 bg-gray-400 rounded-lg shadow-md w-full">
           <div className="flex space-x-4">
           <div className="w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-            <h1 className="text-2xl font-bold text-white mt-5">Todo List</h1>
+            <h1 className="flex justify-center text-2xl font-bold text-white mt-5">Todo List</h1>
             <a href="https://github.com/ManishPrasadGupta/TodoList.git">
                 <img className="p-8 rounded-t-lg" src="https://res.cloudinary.com/mnisprsd/image/upload/v1736079069/Screenshot_2025-01-05_174055_m04dc8.png" alt="product_image1" />
             </a>
