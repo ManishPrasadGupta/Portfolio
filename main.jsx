@@ -9,7 +9,6 @@ import Contact from './src/components/Contact/Contact.jsx'
 import User from './src/components/User/User.jsx'
 import Projects from './src/components/Projects/Projects.jsx'
 
-
 const router = createBrowserRouter([
   {
     path: '/',
