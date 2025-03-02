@@ -7,9 +7,9 @@ export default function Home() {
 
         // Create a temporary anchor tag to trigger the download
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1FumrJZuv2tvYC-4ZMMRKLlM_bm8-UHFj/view?usp=drive_link'; // Path to your file in the public folder
-        link.download = 'https://drive.google.com/file/d/1FumrJZuv2tvYC-4ZMMRKLlM_bm8-UHFj/view?usp=drive_link'; // File name for download
-        link.click(); // Trigger the download
+        link.href = 'https://drive.google.com/file/d/1dzcy__t4KUbm1ohxXZwTLWx7voGQNaso/view?usp=sharing'; 
+        link.download = 'https://drive.google.com/file/d/1dzcy__t4KUbm1ohxXZwTLWx7voGQNaso/view?usp=sharing'; 
+        link.click();
     };
     return (
         <div 
