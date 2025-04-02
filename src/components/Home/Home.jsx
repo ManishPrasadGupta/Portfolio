@@ -24,7 +24,7 @@ export default function Home() {
                 <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
                     <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
                         <h1 className="text-4xl font-bold sm:text-3.5xl text-indigo-400">
-                            Web Developer & Aspiring Cybersecurity Specialist
+                            Web Developer | Aspiring Cybersecurity Specialist | AI/ML Enthusiast
                             <span 
                             className="hidden text-gray-600 sm:block text-2xl"
                              
@@ -64,8 +64,14 @@ export default function Home() {
                     <h2 className="text-lg font-bold">Cybersecurity</h2>
                     <p>"I have over 10 months of hands-on experience exploring various tools and techniques, along with a solid foundation in networking and operating systems, and I’m continuously expanding my skills in this field."</p>
                 </div>
+                <div className="flex-1 bg-slate-700 p-4 text-white
+                rounded-lg shadow-md hover:bg-red-500 transition duration-50 ease-in-out
+                "> {/* third inner container */}
+                    <h2 className="text-lg font-bold">AI/ML</h2>
+                    <p>"Currently exploring Artificial Intelligence and Machine Learning, focusing on understanding core concepts, algorithms, and real-world applications. Eager to apply AI/ML in cybersecurity and web development to build intelligent and secure solutions."</p>
+                </div>
                 
-            </div>
+            </div>  
         </div>
 
             <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium"></h1>

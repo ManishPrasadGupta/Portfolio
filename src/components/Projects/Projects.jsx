@@ -4,15 +4,22 @@ import SnakeGame from './Card/SnakeGame'
 import TodoList from './Card/TodoList'
 import AnanymousFeedback from './Card/AnanymousFeedback'
 import FrontendDesign from './Card/FrontendDesign'
+import EcommerceElectronics from './Card/EcommerceElectronics'
+import Auth from './Card/Auth'
 
 function Projects() {
   return (
     <div className="flex flex-col items-center p-6 bg-indigo-300 rounded-lg shadow-md w-full">
       <h2 className="text-2xl font-bold mb-4">My Skills</h2>
       <div className="space-x-4 lg:flex">
+        <EcommerceElectronics />
+      </div>
+      <div className="space-x-4 lg:flex">
+        <Auth />
         <AnanymousFeedback />
         <FrontendDesign />
       </div>
+      
       <br/> 
       <div className="space-x-4 lg:flex">
         <PigGame />
