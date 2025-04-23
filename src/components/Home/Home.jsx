@@ -3,12 +3,12 @@ import {Link} from 'react-router-dom'
 
 export default function Home() {
     const handleDownload = (e) => {
-        e.preventDefault(); // Prevent <Link> navigation
+        e.preventDefault(); 
 
-        // Create a temporary anchor tag to trigger the download
+
         const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1dzcy__t4KUbm1ohxXZwTLWx7voGQNaso/view?usp=sharing'; 
-        link.download = 'https://drive.google.com/file/d/1dzcy__t4KUbm1ohxXZwTLWx7voGQNaso/view?usp=sharing'; 
+        link.href = 'https://drive.google.com/file/d/1iNj98LCarb0CsKf_dTkEULeSBp0_Xch8/view?usp=sharing'; 
+        link.target="_blank";
         link.click();
     };
     return (
