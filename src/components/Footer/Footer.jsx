@@ -4,8 +4,19 @@ import { Link } from 'react-router-dom'
 
 export default function Footer() {
     return (
-        <footer className=" w-full z-100 h-50 backdrop-filter backdrop-blur-md border-t border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] ">
+        <div>
+            {/* <div
+                className="fixed inset-0 z-0"
+                style={{
+                    background: "linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.7))",
+                    minHeight: "100vh",
+                    width: "100vw",
+                }}
+            /> */}
+            <footer className=" w-full z-100 h-50 backdrop-filter backdrop-blur-md border-t border-gray-200 bg-opacity-40 sticky top-0 bg-[#101010] ">
+            
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+            
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <Link to="/" className="flex items-center">
@@ -151,5 +162,6 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
+        </div>
     );
 }

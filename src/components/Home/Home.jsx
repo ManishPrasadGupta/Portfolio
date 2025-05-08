@@ -1,80 +1,130 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const handleDownload = (e) => {
-        e.preventDefault(); 
-
-
-        const link = document.createElement('a');
-        link.href = 'https://drive.google.com/file/d/1iNj98LCarb0CsKf_dTkEULeSBp0_Xch8/view?usp=sharing'; 
-        link.target="_blank";
-        link.click();
+        e.preventDefault();
+        window.open(
+            'https://drive.google.com/file/d/1iNj98LCarb0CsKf_dTkEULeSBp0_Xch8/view?usp=sharing',
+            '_blank'
+        );
     };
-    return (
-        <div 
-            className="mx-auto w-full max-w-7xl relative " 
-           
-            >
-            <aside className="relative overflow-hidden text-black rounded-lg sm:mx-16 mx-2 sm:py-16">
-                <div className="absolute inset-0 w-full sm:my-20 sm:pt-1 pt-12 h-full ">
-                    
-                    <img className="w-96" src="https://res.cloudinary.com/mnisprsd/image/upload/v1735478072/me1_ldwgqu.jpg" alt="image1" />
-                </div>
-                <div className="relative z-10 max-w-screen-xl px-4  pb-20 pt-10 sm:py-24 mx-auto sm:px-6 lg:px-8">
-                    <div className="max-w-xl sm:mt-1 mt-80 space-y-8 text-center sm:text-right sm:ml-auto">
-                        <h1 className="text-4xl font-bold sm:text-3.5xl text-indigo-400">
-                            Web Developer | Aspiring Cybersecurity Specialist | AI/ML Enthusiast
-                            <span 
-                            className="hidden text-gray-600 sm:block text-2xl"
-                             
-                            >Hi, I'm Manish Prasad Gupta From Meghalaya, India</span>
-                        </h1>
 
+    return (
+        <div className="relative min-h-screen flex flex-col items-center justify-center">
+            
+            <div
+                className="fixed inset-0 z-0 animate-fade-in"
+                style={{
+                    background: "linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0.7))",
+                    minHeight: "100vh",
+                    width: "100vw",
+                }}
+            />
+            
+            <div className="relative z-10 w-full max-w-7xl mx-auto flex flex-col items-center py-8 animate-fade-in-slow">
+
+                <section className="w-full flex flex-col-reverse lg:flex-row items-center justify-between animate-fade-in-up transition-all duration-700">
+                    <div className="flex-1 flex flex-col items-center lg:items-end text-center lg:text-right space-y-6 px-4 transition-all duration-1000 animate-slide-up">
+                        <h1 className="text-4xl sm:text-5xl font-extrabold text-indigo-300 drop-shadow-lg">
+                            Cybersecurity Specialist
+                            <span className="text-orange-400 mx-1">|</span>
+                            AI/ML Enthusiast
+                        </h1>
+                        <span className="text-lg sm:text-2xl text-white font-medium">
+                            Hi, I'm <span className="text-orange-300 font-bold">Manish Prasad Gupta</span> from Meghalaya, India
+                        </span>
                         <Link
-                            className="inline-flex text-white items-center px-6 py-3 font-medium backdrop-blur-10 bg-[#f65733] rounded-lg hover:bg-orange-400"
-                            to="" onClick={handleDownload}>
-                            
-                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg>
-                            
-                            &nbsp; My Resume
+                            className="inline-flex items-center gap-2 px-8 py-3 text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-pink-500 rounded-xl shadow-lg hover:from-orange-600 hover:to-red-500 focus:ring-4 focus:ring-orange-400 transition-all backdrop-blur-md border border-orange-300"
+                            to=""
+                            onClick={handleDownload}
+                        >
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#fff">
+                                <path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/>
+                            </svg>
+                            My Resume
                         </Link>
                     </div>
-                </div>
+                    <div className="flex-1 flex justify-center items-center mb-8 lg:mb-0 transition-all duration-1000 animate-image-slide-in-right">
+                        <div className="rounded-3xl shadow-2xl border-4 border-white/30 backdrop-blur-xl bg-white/10 p-2 group">
+                            <img
+                                className="rounded-2xl w-64 sm:w-80 object-cover transition-transform duration-700 ease-in-out group-hover:scale-105 group-hover:shadow-2xl group-hover:rotate-2"
+                                src="https://res.cloudinary.com/mnisprsd/image/upload/v1735478072/me1_ldwgqu.jpg"
+                                alt="Manish Prasad Gupta"
+                            />
+                        </div>
+                    </div>
+                </section>
 
-               
-            </aside>
+                <section className="w-full mt-12 max-w-6xl animate-fade-in-up transition-all duration-700">
+                    <h2 className="text-3xl sm:text-4xl font-bold text-indigo-200 text-center mb-10 tracking-tight drop-shadow-lg">
+                        My Experience
+                    </h2>
+                    <div className="flex flex-col md:flex-row gap-6">
+                        <div className="flex-1 rounded-3xl bg-white/20 backdrop-blur-md border border-white/20 shadow-xl p-8 hover:scale-105 hover:bg-white/30 transition-all duration-200">
+                            <h3 className="text-xl font-semibold text-orange-400 mb-3 flex items-center gap-1">
+                                <span role="img" aria-label="web">💻</span> Web Development
+                            </h3>
+                            <p className="text-gray-200">
+                                I have over a year of experience in web development, with a strong foundation in TypeScript, JavaScript, ReactJS & NextJS and have built various small projects that showcase my skills. Currently, I'm deepening my expertise by focusing on backend development to become a well-rounded full-stack developer.
+                            </p>
+                        </div>
+                        <div className="flex-1 rounded-3xl bg-white/20 backdrop-blur-md border border-white/20 shadow-xl p-8 hover:scale-105 hover:bg-white/30 transition-all duration-200">
+                            <h3 className="text-xl font-semibold text-orange-400 mb-3 flex items-center gap-1">
+                                <span role="img" aria-label="security">🛡️</span> Cybersecurity
+                            </h3>
+                            <p className="text-gray-200">
+                                I have over 10 months of hands-on experience exploring various tools and techniques, along with a solid foundation in networking and operating systems, and I’m continuously expanding my skills in this field.
+                            </p>
+                        </div>
+                        <div className="flex-1 rounded-3xl bg-white/20 backdrop-blur-md border border-white/20 shadow-xl p-8 hover:scale-105 hover:bg-white/30 transition-all duration-200">
+                            <h3 className="text-xl font-semibold text-orange-400 mb-3 flex items-center gap-1">
+                                <span role="img" aria-label="ai">🤖</span> AI/ML
+                            </h3>
+                            <p className="text-gray-200">
+                                Currently exploring Artificial Intelligence and Machine Learning, focusing on understanding core concepts, algorithms, and real-world applications. Eager to apply AI/ML in cybersecurity and web development to build intelligent and secure solutions.
+                            </p>
+                        </div>
+                    </div>
+                </section>
 
+            </div>
 
-            <h1 className='text-4xl font-bold p-4 text-indigo-400 font-'>My Experience</h1>
-
-             {/* Main container */}
-            <div className="container mx-auto p-5 bg-indigo-500">
-                {/* Flex container for side-by-side layout */}
-            <div className="flex space-x-4 ">  
-                <div className="flex-1 bg-slate-700 p-4 text-white
-                 rounded-lg shadow-md transition hover:bg-red-500 duration-50 ease-in-out ">
-                {/* First inner container */}
-                    <h2 className="text-lg font-bold">Web Development</h2>
-                    <p>"I have over a year of experience in web development, with a strong foundation in TypeScript, JavaScript, ReactJS & NextJS and have built various small projects that showcase my skills. Currently, I'm deepening my expertise by focusing on backend development to become a well-rounded full-stack developer."</p>
-                </div>
-                <div className="flex-1 bg-slate-700 p-4 text-white
-                rounded-lg shadow-md hover:bg-red-500 transition duration-50 ease-in-out
-                "> {/* Second inner container */}
-                    <h2 className="text-lg font-bold">Cybersecurity</h2>
-                    <p>"I have over 10 months of hands-on experience exploring various tools and techniques, along with a solid foundation in networking and operating systems, and I’m continuously expanding my skills in this field."</p>
-                </div>
-                <div className="flex-1 bg-slate-700 p-4 text-white
-                rounded-lg shadow-md hover:bg-red-500 transition duration-50 ease-in-out
-                "> {/* third inner container */}
-                    <h2 className="text-lg font-bold">AI/ML</h2>
-                    <p>"Currently exploring Artificial Intelligence and Machine Learning, focusing on understanding core concepts, algorithms, and real-world applications. Eager to apply AI/ML in cybersecurity and web development to build intelligent and secure solutions."</p>
-                </div>
-                
-            </div>  
-        </div>
-
-            <h1 className="text-center text-2xl sm:text-5xl py-10 font-medium"></h1>
+            <style>
+                {`
+                @keyframes fade-in {
+                  from { opacity: 0; }
+                  to { opacity: 1; }
+                }
+                .animate-fade-in {
+                  animation: fade-in 1s ease both;
+                }
+                .animate-fade-in-slow {
+                  animation: fade-in 2s ease both;
+                }
+                @keyframes slide-up {
+                  from { opacity: 0; transform: translateY(30px);}
+                  to { opacity:1; transform: translateY(0);}
+                }
+                .animate-slide-up {
+                  animation: slide-up 1s 0.3s cubic-bezier(0.23, 1, 0.32, 1) both;
+                }
+                @keyframes fade-in-up {
+                  0% { opacity: 0; transform: translateY(40px);}
+                  100% { opacity:1; transform: translateY(0);}
+                }
+                .animate-fade-in-up {
+                  animation: fade-in-up 1.2s 0.5s cubic-bezier(0.23, 1, 0.32, 1) both;
+                }
+                @keyframes image-slide-in-right {
+                  from { opacity: 0; transform: translateX(80px);}
+                  to { opacity:1; transform: translateX(0);}
+                }
+                .animate-image-slide-in-right {
+                  animation: image-slide-in-right 1.2s 0.3s cubic-bezier(0.23, 1, 0.32, 1) both;
+                }
+                `}
+            </style>
         </div>
     );
 }
