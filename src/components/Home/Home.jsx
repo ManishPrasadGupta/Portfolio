@@ -27,6 +27,8 @@ export default function Home() {
                 <section className="w-full flex flex-col-reverse lg:flex-row items-center justify-between animate-fade-in-up transition-all duration-700">
                     <div className="flex-1 flex flex-col items-center lg:items-end text-center lg:text-right space-y-6 px-4 transition-all duration-1000 animate-slide-up">
                         <h1 className="text-4xl sm:text-5xl font-extrabold text-indigo-300 drop-shadow-lg">
+                            Web Developer
+                            <span className="text-orange-400 mx-1">|</span>
                             Cybersecurity Specialist
                             <span className="text-orange-400 mx-1">|</span>
                             AI/ML Enthusiast
