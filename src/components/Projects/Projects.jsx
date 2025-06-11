@@ -6,6 +6,7 @@ import AnanymousFeedback from './Card/AnanymousFeedback'
 import FrontendDesign from './Card/FrontendDesign'
 import EcommerceElectronics from './Card/EcommerceElectronics'
 import Auth from './Card/Auth'
+import BlinkTacToe from './Card/BlinkTacToe'
 
 function Projects() {
   return (
@@ -31,6 +32,7 @@ function Projects() {
         {/* Main project grid with fade-in-up animation */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl mb-10 items-stretch transition-all duration-700 animate-fade-in-up">
           <div className="h-full flex transition-transform duration-500 hover:scale-105"><EcommerceElectronics /></div>
+          <div className="h-full flex transition-transform duration-500 hover:scale-105"><BlinkTacToe /></div>
           <div className="h-full flex transition-transform duration-500 hover:scale-105"><Auth /></div>
           <div className="h-full flex transition-transform duration-500 hover:scale-105"><AnanymousFeedback /></div>
           <div className="h-full flex transition-transform duration-500 hover:scale-105"><FrontendDesign /></div>
