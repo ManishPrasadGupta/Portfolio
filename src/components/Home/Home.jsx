@@ -5,7 +5,7 @@ export default function Home() {
     const handleDownload = (e) => {
         e.preventDefault();
         window.open(
-            'https://drive.google.com/file/d/1fsFpIyqLSbBLiERx5hVq_TYFkGOzE_dd/view?usp=sharing',
+            'https://drive.google.com/file/d/1THhnmdHItrZKblnCf6L1AM_0IhidL8k9/view?usp=sharing',
             '_blank'
         );
     };
